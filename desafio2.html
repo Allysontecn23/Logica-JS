@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<script>
+
+    alert("Bem vindo ao meu programa!")
+
+    let fimDeSemana = ["Sábado", "Domingo"]
+    let semana = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta"]
+    let diaDaSemanaEscolhido = prompt("Escolha um dia da semana");
+
+    let estaDentroDaSemana = false;
+
+    for(diaDaSemana of semana) {
+        debugger
+        if(diaDaSemana.toLowerCase() == diaDaSemanaEscolhido.toLowerCase()) {
+            estaDentroDaSemana = true;
+        }
+    } 
+    
+    if(estaDentroDaSemana) {
+        alert("Boa Semana!");
+    } else {
+        alert("Bom fim de semana");
+    }
+
+
+    // Exercicio 1
+    let diaDaSemana = prompt('Qual é o dia da semana?');
+    if (diaDaSemana == 'Sábado') {
+         alert('Bom fim de semana!');
+    } else if (diaDaSemana == 'Domingo') {
+         alert('Bom fim de semana!');
+    } else {
+        alert('Boa semana!');
+    }
+
+
+    // Exercicio 2
+    let numeroDigitado = prompt("Digite um numero!")
+    if(numeroDigitado < 0) {
+        alert("Este é negativo");
+    } else {
+        alert("Este é Positivo!")
+    }
+
+    // Exercicio 3
+    let pontuacao = prompt("Digite sua pontuação");
+    if(pontuacao >= 100) {
+        alert("Parabéns, você venceu!");
+    } else {
+        alert("Tente novamente para ganhar.");
+    }
+
+    // Exercicio 4
+    let saldoConta = prompt("Digite o saldo da sua conta!");
+    alert(`O saldo da sua conta é ${saldoConta}`);
+
+    // Exercicio 5
+    let nome = prompt("Digite seu nome.");
+    alert(`Bem vindo ao meu jogo ${nome}`);
+
+
+
+</script>
