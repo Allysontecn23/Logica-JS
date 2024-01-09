@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<script>
+
+    function ContagemPositiva () {
+        let numero = 1;
+
+        while(numero <= 10) {
+            alert(`Incrementado ${numero}`)
+            numero++;
+        }
+    }
+
+    ContagemPositiva();
+
+    function ContagemNegativa() {
+        let numero = 10;
+
+        while(numero >= 0) {
+            alert(`Decrementando ${numero}`)
+            numero--;
+        }
+    }
+
+    ContagemNegativa();
+
+
+    function ContagemRegressiva() {
+        let numeroMaximo = prompt("Digite um número para a contagem regressiva:");
+        while(numeroMaximo >= 0) {
+            console.log(`O programa começará em ${numeroMaximo}`)
+            numeroMaximo--;
+        }
+    }
+
+    ContagemRegressiva();
+
+    function ContagemProgressiva() {
+        let numeroMaximo = prompt("Digite um número para a contagem progregressiva:");;
+        let contador = 0;
+
+        while(contador <= numeroMaximo) {
+            console.log(`O programa começará em ${contador}`)
+            contador++;
+        }
+    }
+
+    ContagemProgressiva();
+
+
+
+
+
+
+</script>
